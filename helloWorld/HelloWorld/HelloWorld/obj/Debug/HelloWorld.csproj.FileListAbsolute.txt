@@ -1,0 +1,15 @@
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojAssemblyReference.cache
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\MainWindow.g.cs
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\App.g.cs
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\HelloWorld_MarkupCompile.cache
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\HelloWorld_MarkupCompile.lref
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\MainWindow.baml
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\HelloWorld.g.resources
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Properties.Resources.resources
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.GenerateResource.cache
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\MAARTEN\Desktop\ADSD\periode03\C#\Week02\example\helloWorld\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb

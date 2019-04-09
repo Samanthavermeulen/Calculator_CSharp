@@ -1,0 +1,19 @@
+﻿<Window x:Class="HelloWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWorld"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<Grid>
+		<Button x:Name="btnHello" Content="Press me!" HorizontalAlignment="Left" Margin="366,339,0,0" VerticalAlignment="Top" Width="212" Height="42" Click="btnHello_Click"/>
+		<ListBox x:Name="listBox" HorizontalAlignment="Left" Height="300" Margin="38,36,0,0" VerticalAlignment="Top" Width="158" SelectionChanged="listBox_SelectionChanged">
+			<ListBoxItem Content="Apple"/>
+			<ListBoxItem Content="Banana"/>
+		</ListBox>
+		<TextBlock x:Name="txbWelcome" HorizontalAlignment="Left" Height="61" Margin="238,36,0,0" TextWrapping="Wrap" Text="Welcome to my program!" VerticalAlignment="Top" Width="306" FontSize="20" MouseEnter="txbWelcome_MouseEnter"/>
+		<TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="181" Margin="238,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="201" TextChanged="txtBox_TextChanged"/>
+
+	</Grid>
+</Window>

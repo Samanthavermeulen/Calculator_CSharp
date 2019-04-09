@@ -1,0 +1,96 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="430" Width="280">
+    <Window.Resources>
+        <Storyboard x:Key="rekenmachine">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="TxtDisplay">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="232"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="TxtDisplay">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-58"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="TxtDisplay">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.312"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource rekenmachine}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+
+        <!-- left to right -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!-- top to bottom -->
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- Number buttons -->
+        <!-- first row of numbers -->
+        <Button x:Name="Btn7" Grid.Column="0" Grid.Row="2" Click="Btn7_Click">7</Button>
+        <Button x:Name="Btn8" Grid.Column="1" Grid.Row="2" Click="Btn8_Click">8</Button>
+        <Button x:Name="Btn9" Grid.Column="2" Grid.Row="2" Click="Btn9_Click">9</Button>
+        <!-- second row of numbers -->
+        <Button x:Name="Btn4" Grid.Column="0" Grid.Row="3" Click="Btn4_Click">4</Button>
+        <Button x:Name="Btn5" Grid.Column="1" Grid.Row="3" Click="Btn5_Click">5</Button>
+        <Button x:Name="Btn6" Grid.Column="2" Grid.Row="3" Click="Btn6_Click">6</Button>
+        <!-- third row of numbers -->
+        <Button x:Name="Btn1" Grid.Column="0" Grid.Row="4" Click="Btn1_Click">1</Button>
+        <Button x:Name="Btn2" Grid.Column="1" Grid.Row="4" Click="Btn2_Click">2</Button>
+        <Button x:Name="Btn3" Grid.Column="2" Grid.Row="4" Click="Btn3_Click">3</Button>
+        <!-- fourth row of number -->
+        <Button x:Name="Btn0" Grid.Column="1" Grid.Row="5" Click="Btn0_Click">0</Button>
+        <!-- end of the numbers -->
+
+        <!-- Math button -->
+        <Button x:Name="BtnPlus" Grid.Column="3" Grid.Row="1" Click="BtnPlus_Click">+</Button>
+        <Button x:Name="BtnMinus" Grid.Column="3" Grid.Row="2" Click="BtnMinus_Click">-</Button>
+        <Button x:Name="BtnTimes" Grid.Column="3" Grid.Row="3" Click="BtnTimes_Click">*</Button>
+        <Button x:Name="BtnDivide" Grid.Column="3" Grid.Row="4" Click="BtnDivide_Click">/</Button>
+        <Button x:Name="BtnEquel" Grid.Column="3" Grid.Row="5" Click="BtnEquel_Click">=</Button>
+        <Button x:Name="BtnPlusMinus" Grid.Column="0" Grid.Row="5" Click="BtnPlusMinus_Click">+-</Button>
+
+
+
+
+        <!-- clear buttons -->
+        <Button x:Name="BtnClearEntry" Grid.Column="0" Grid.Row="1" Click="BtnClearEntry_Click">CE</Button>
+        <Button x:Name="BtnClear" Grid.Column="1" Grid.Row="1" Click="BtnClear_Click">C</Button>
+        <Button x:Name="BtnBackSpace" Grid.Column="2" Grid.Row="1" Content="&lt;=" Click="BtnBackSpace_Click"/>
+
+        <!-- display text box -->
+        <TextBox x:Name="TxtDisplay" IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" FontSize="30" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform> 0
+        </TextBox>
+
+
+
+
+    </Grid>
+</Window>
